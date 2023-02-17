@@ -20,7 +20,10 @@
       crossorigin="anonymous"
     />
     <link href="https://fonts.cdnfonts.com/css/trashhand" rel="stylesheet" />
-    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
 
     <!-- Bootstrap CSS with CDN -->
     <link
@@ -73,7 +76,11 @@
         <section class="container-logo container-full">
           <div id="logoList" class="logos reveal"></div>
           <div class="action-box text-center w-100 reveal">
-            <button class="btn w-100 animate">
+            <button
+              class="btn-normal btn w-100 animate"
+              data-toggle="modal"
+              data-target="#alertModal"
+            >
               <label class="text-800 text-upper">Get Free VIP Access Now</label>
               <p class="font-md text-600">
                 100% Free VIP ACCESS For Previous Members
@@ -145,6 +152,33 @@
           </div>
         </div>
       </footer>
+    </div>
+    <div class="modal fade" id="alertModal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="title">IMPORTANT! One more step...</div>
+            <div class="content">
+              <p>
+                If you leave, <mark>you will lose $3,679 in bonuses!</mark>
+                <mark>Click below now to save</mark> your spot for the Challenge
+              </p>
+            </div>
+            <button class="btn-order btn btn-normal text-upper">
+              Click Here To Stay On This Page & Review This Offer
+            </button>
+            <div class="comment">
+              <mark class="text-700 text-underline">No thanks.</mark> I don’t
+              want any personal help and I’d rather pay full price at a later
+              time.
+              <mark>Take me to my membership details.</mark>
+            </div>
+          </div>
+          <button type="button" class="close btn" data-dismiss="modal">
+            &times;
+          </button>
+        </div>
+      </div>
     </div>
 
     <script

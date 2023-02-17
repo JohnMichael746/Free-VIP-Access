@@ -158,12 +158,6 @@ section.container-logo .action-box {
 section.container-logo .action-box button {
     max-width: 680px;
     height: 130px;
-    background: linear-gradient(153.77deg, #FFA300 21.41%, #FF7A00 86.48%);
-    box-shadow: 0px 2px 0px #EC5500;
-    border-radius: 8px;
-    color: white;
-    padding: 0 20px;
-    position: relative;
 }
 
 section.container-logo .action-box button::after,
@@ -189,11 +183,6 @@ section.container-logo .action-box button::after {
     right: -77px;
     left: auto;
     transform: rotate(180deg) scaleY(-1);
-}
-
-section.container-logo .action-box button:hover {
-    box-shadow: 0px 6px 0px #EC5500;
-    opacity: 0.8;
 }
 
 section.container-logo .action-box button:hover::after {
@@ -401,6 +390,23 @@ section.container-compare footer .btn-action:hover {
 
 #wrapper>footer a {
     padding: 0 3px;
+}
+
+#alertModal .modal-body {
+    padding: 100px 40px;
+}
+
+button.btn-order {
+    width: 100%;
+    max-width: 513px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    padding: 12px 0;
+}
+
+.modal-body .comment {
+    display: none;
 }
 
 @media(max-width: 1500px) {
@@ -632,5 +638,39 @@ section.container-compare footer .btn-action:hover {
         font-size: 12px;
         font-weight: 500;
         line-height: 164%;
+    }
+
+    #alertModal .modal-body {
+        padding: 0;
+    }
+
+    .modal-content {
+        width: 100%;
+        padding: 37px 7px;
+    }
+
+    .modal-body .title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 37px;
+        margin-bottom: 6px;
+    }
+
+    .modal-body p {
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    .modal-body .btn-order {
+        margin-top: 14px;
+        margin-bottom: 16px;
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    .modal-body .comment {
+        color: #1F1F1F;
+        display: block;
+        font-size: 16px;
     }
 }
