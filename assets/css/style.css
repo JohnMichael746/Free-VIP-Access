@@ -410,7 +410,6 @@ button.btn-order {
 }
 
 @media(max-width: 1500px) {
-
     section.container-compare #eliteList::before,
     section.container-compare #eliteList::after {
         display: none;
